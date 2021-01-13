@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="becker">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/becker.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
