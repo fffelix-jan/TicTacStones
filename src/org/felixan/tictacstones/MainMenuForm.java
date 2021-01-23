@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class MainMenuForm extends JFrame {
+public class MainMenuForm {
     public JPanel mainPanel;
     private JButton onePlayerButton;
     private JButton twoPlayerButton;
