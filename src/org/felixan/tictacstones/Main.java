@@ -75,7 +75,7 @@ public class Main {
                 }
                 // Prompt player 1 to choose the direction if "Pass" was not selected
                 if (toMovePiece != 4) {
-                    toMoveDirectionChoice = JOptionPane.showOptionDialog(gameMessageFrame, "Player 1: Please choose a direction to move the piece in.", "Player 1: Piece Selection", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, DIRECTION_CHOICES, JOptionPane.DEFAULT_OPTION);
+                    toMoveDirectionChoice = JOptionPane.showOptionDialog(gameMessageFrame, "Player 1: Please choose a direction to move piece " + PIECE_CHOICES[toMovePiece] + " in.", "Player 1: Piece Selection", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, DIRECTION_CHOICES, JOptionPane.DEFAULT_OPTION);
                 } else {
                     break;
                 }
@@ -111,7 +111,7 @@ public class Main {
                 }
                 // Prompt player 1 to choose the direction if "Pass" was not selected
                 if (toMovePiece != 4) {
-                    toMoveDirectionChoice = JOptionPane.showOptionDialog(gameMessageFrame, "Player 2: Please choose a direction to move piece ", "Player 2: Piece Selection", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, DIRECTION_CHOICES, JOptionPane.DEFAULT_OPTION);
+                    toMoveDirectionChoice = JOptionPane.showOptionDialog(gameMessageFrame, "Player 2: Please choose a direction to move piece " + PIECE_CHOICES[toMovePiece] + " in.", "Player 2: Piece Selection", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, DIRECTION_CHOICES, JOptionPane.DEFAULT_OPTION);
                 } else {
                     break;
                 }
