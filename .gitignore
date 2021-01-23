@@ -24,3 +24,6 @@ hs_err_pid*
 
 # Include everything in lib folder
 !lib/*
+
+# Exclode everything in out (compiled stuff)
+out/*
