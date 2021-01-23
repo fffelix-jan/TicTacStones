@@ -6,8 +6,6 @@ import becker.robots.icons.CircleIcon;
 
 import javax.swing.*;
 import java.awt.Color;
-import java.util.Arrays;
-import java.util.Comparator;
 
 public class Main {
     public static boolean ready = false;
@@ -54,7 +52,7 @@ public class Main {
             player1Pieces[c].setLabel("P1" + abcd[c]);
         }
         for (int c = 0; c < 4; c++) {
-            player2Pieces[c].setIcon(new CircleIcon(Color.white));
+            player2Pieces[c].setIcon(new CircleIcon(Color.green));
             player2Pieces[c].setLabel("P2" + abcd[c]);
         }
 

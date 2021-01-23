@@ -7,7 +7,7 @@ import javax.sound.sampled.Clip;
 import javax.swing.*;
 
 public class MainMenu {
-    private static JFrame mainMenuFrame = new JFrame("Tic-Tac-Stones");
+    public static JFrame mainMenuFrame = new JFrame("Tic-Tac-Stones");
 
     /**
      * Shows the Main Menu.

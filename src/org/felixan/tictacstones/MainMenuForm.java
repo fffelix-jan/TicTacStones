@@ -19,8 +19,7 @@ public class MainMenuForm extends JFrame {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame messageFrame = new JFrame();
-                JOptionPane.showMessageDialog(messageFrame, "HOW TO PLAY TIC-TAC-STONES:\n\n1. Each player starts with 4 pieces arranged on a board that is 4 squares by 4 squares.\n2. A turn consists of a one-space move, horizontally or vertically. The piece cannot overlap another piece.\n3. The game is won when 1 player has managed to line up 3 of his or her pieces horizontally, vertically, or diagonally.\n\nHave fun!", "How To Play", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(MainMenu.mainMenuFrame, "HOW TO PLAY TIC-TAC-STONES:\n\n1. Each player starts with 4 pieces arranged on a board that is 4 squares by 4 squares.\n2. A turn consists of a one-space move, horizontally or vertically. The piece cannot overlap another piece.\n3. The game is won when 1 player has managed to line up 3 of his or her pieces horizontally, vertically, or diagonally.\n\nHave fun!", "How To Play", JOptionPane.INFORMATION_MESSAGE);
             }
         });
         twoPlayerButton.addActionListener(new ActionListener() {
