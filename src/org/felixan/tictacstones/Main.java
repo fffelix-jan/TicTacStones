@@ -189,6 +189,13 @@ public class Main {
         }
     }
 
+    /**
+     * Calculates where the piece will end up after moving.
+     * @param pieceNum The piece number.
+     * @param toTravelDir The direction to travel in.
+     * @param player2 true for Player 2's pieces and false for Player 1's pieces.
+     * @return An integer array with the final coordinates of the piece
+     */
     private static int[] calculateNextPos(int pieceNum, Direction toTravelDir, boolean player2) {
         int[][] gamePieces;
         int[] res;
@@ -220,7 +227,8 @@ public class Main {
      * @return 1 if player 1 won and 2 if player 2 won, otherwise 0 if no one won yet.
      */
     public static int checkWin() {
-        // This algorithm first checks for one neighbouring piece to determine the type of win pattern (diagonal /, diagonal \, horizontal or vertical).
+        // This algorithm starts with one piece, then first checks for one neighbouring piece to determine the type of win pattern
+        // (diagonal /, diagonal \, horizontal or vertical).
         // Once it knows, it then checks if the other corresponding piece is present.
         // It took me so many tries and hours of pain to perfect the algorithm!
         for (int[] piece : player1Pos) {
