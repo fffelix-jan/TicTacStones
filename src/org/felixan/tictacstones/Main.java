@@ -9,8 +9,6 @@ import java.awt.Color;
 
 public class Main {
     public static boolean ready = false;
-    private static GamePiece[] player1Pieces;
-    private static GamePiece[] player2Pieces;
     private static int[][] player1Pos;
     private static int[][] player2Pos;
 
@@ -62,15 +60,13 @@ public class Main {
         final String[] DIRECTION_CHOICES = {"Up", "Down", "Left", "Right"};
         final Direction[] DIRECTIONS = {Direction.NORTH, Direction.SOUTH, Direction.WEST, Direction.EAST};
 
-        boolean successfulMove = false;
 
         int toMovePiece;
-        int toMoveDirectionChoice = 0;
-        int winRes = 0;
+        int toMoveDirectionChoice;
+        int winRes;
 
         for (; ; ) {
             for (; ; ) {
-                successfulMove = false;
                 // Prompt player 1 to choose a piece to move
                 toMovePiece = JOptionPane.showOptionDialog(gameMessageFrame, "Player 1: Please choose a piece to move.", "Player 1: Piece Selection", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, PIECE_CHOICES, JOptionPane.DEFAULT_OPTION);
                 // Exit the game if the red X is clicked
@@ -107,7 +103,6 @@ public class Main {
 
             // Prompt player 2 to choose a piece to move
             for (; ; ) {
-                successfulMove = false;
                 // Prompt player 2 to choose a piece to move
                 toMovePiece = JOptionPane.showOptionDialog(gameMessageFrame, "Player 2: Please choose a piece to move.", "Player 2: Piece Selection", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, PIECE_CHOICES, JOptionPane.DEFAULT_OPTION);
                 // Exit the game if the red X is clicked
@@ -155,7 +150,7 @@ public class Main {
      * @param direction The `Direction` to move the piece in.
      */
     public static void movePiece(boolean player2, int piece, Direction direction, GamePiece pieceObj) throws IllegalMoveException {
-        int[] nextPos = new int[0];
+        int[] nextPos;
 
         if (player2) {
             // Keep track of the position of the piece
