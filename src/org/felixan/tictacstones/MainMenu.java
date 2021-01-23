@@ -39,7 +39,6 @@ public class MainMenu {
             clip.open(audioInputStream);
             clip.start();
         } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 }

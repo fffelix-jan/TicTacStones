@@ -26,7 +26,7 @@ public class Main {
 
         // Wait until the user is ready to begin
         while (!ready) {
-            Thread.sleep(500);
+            Thread.sleep(100);
         }
 
         // Create the board and pieces
